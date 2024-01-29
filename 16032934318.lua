@@ -65,8 +65,9 @@ wait(2)
 duration()
 wait(2)
 spawn(function()
-    while task.wait(10) do
+    while task.wait() do
         equip()
+        wait(10)
     end
 end)
 wait(1)
