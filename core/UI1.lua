@@ -449,8 +449,6 @@ function Library:CreateWindow(windowname,windowinfo)
             ToggleBallCorner.CornerRadius = UDim.new(0, 100)
             ToggleBallCorner.Name = "ToggleBallCorner"
             ToggleBallCorner.Parent = ToggleBall
-            print(ToggleEnabled)
-            print('-------------------')
             if ToggleEnabled then 
                 ToggleHolder.BackgroundColor3 = Color3.fromRGB(16,16,16)
                 ToggleBall:TweenPosition(UDim2.new(0.455, 0,0.158, 0),"Out","Linear",0.1)
@@ -465,7 +463,6 @@ function Library:CreateWindow(windowname,windowinfo)
                 ToggleBall:TweenPosition(UDim2.new(0.123, 0,0.158, 0),"Out","Linear",0.1)
             end
             ToggleButton.MouseButton1Down:Connect(function()
-                print(ToggleEnabled)
                 ToggleEnabled = not ToggleEnabled
                 if ToggleEnabled then 
                     ToggleHolder.BackgroundColor3 = Color3.fromRGB(16,16,16)
