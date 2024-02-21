@@ -644,7 +644,7 @@ function Library:CreateWindow(windowname,windowinfo)
             --
         end
 
-        function PageElements:addDropdown(dropdownname,list,scrollsize,callback)
+        function PageElements:addDropdown(dropdownname, MapSelect,list,scrollsize,callback)
             local DropdownHolder = Instance.new("Frame")
             local DropdownHolderCorner = Instance.new("UICorner")
             local DropdownTitle = Instance.new("TextLabel")
@@ -679,7 +679,7 @@ function Library:CreateWindow(windowname,windowinfo)
             DropdownTitle.Position = UDim2.new(0.024305556, 0, 0, 0)
             DropdownTitle.Size = UDim2.new(0, 195, 0, 24)
             DropdownTitle.Font = Enum.Font.GothamSemibold
-            DropdownTitle.Text = dropdownname
+            DropdownTitle.Text = dropdownname .. MapSelect
             DropdownTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             DropdownTitle.TextSize = 11.000
             DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
