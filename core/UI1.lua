@@ -451,6 +451,7 @@ function Library:CreateWindow(windowname,windowinfo)
             ToggleBallCorner.Parent = ToggleBall
 
             ToggleButton.MouseButton1Down:Connect(function()
+                print(ToggleEnabled)
                 ToggleEnabled = not ToggleEnabled
                 if ToggleEnabled then 
                     ToggleHolder.BackgroundColor3 = Color3.fromRGB(16,16,16)
