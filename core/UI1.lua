@@ -379,7 +379,7 @@ function Library:CreateWindow(windowname,windowinfo)
             
         end
 
-        function PageElements:addToggle(togglename,callback)
+        function PageElements:addToggle(togglename, ToggleEnabled ,callback)
             local ToggleHolder = Instance.new("Frame")
             local ToggleHolderCorner = Instance.new("UICorner")
             local ToggleTitle = Instance.new("TextLabel")
@@ -390,7 +390,6 @@ function Library:CreateWindow(windowname,windowinfo)
             local ToggleBallCorner = Instance.new("UICorner")
 
             local callback = callback or function() end
-            local ToggleEnabled = false
 
             ToggleHolder.Name = "ToggleHolder"
             ToggleHolder.Parent = Home
