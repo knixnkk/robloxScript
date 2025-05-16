@@ -599,7 +599,7 @@ do
 		local padding = 10
 		local textSize = game:GetService("TextService"):GetTextSize(text, 12, Enum.Font.Gotham, Vector2.new(math.huge, 16))
 		
-		notification.Position = library.lastNotification or UDim2.new(0, padding, 1, -(notification.AbsoluteSize.Y + padding))
+		notification.Position = library.lastNotification or UDim2.new(0, padding, 1, -(60 + padding))
 		notification.Size = UDim2.new(0, 0, 0, 60)
 		
 		utility:Tween(notification, {Size = UDim2.new(0, textSize.X + 70, 0, 60)}, 0.2)
